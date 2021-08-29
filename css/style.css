@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+@font-face{
+    src:url(../fonts/OpenSans-Light.ttf);
+    font-family: "Open Sans";
+}
+
+.center{ 
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/*inicio header*/
+.header{
+    height: 60px;
+    background-color: rgb(33, 35, 67);
+}
+
+.center > img{
+    margin-top: 17px;
+    margin-left: 5%;
+    float: left;
+}   
+/*fim-header*/
+
+/*inicio banner*/
+.banner{
+    width: 100%;
+    height: 540px;
+    padding-inline: 3%;
+    background-image: url(../img/header_bg.png);
+    background-size: cover;
+    background-position: center;
+}
+/*fim banner*/
+
+/*inicio lista banner*/
+.container-list{
+    float: left;
+    height: 270px;
+    width: calc(100% - 390px);
+    max-width: 620px;
+    margin-top: 97px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(33, 35, 67, 0.7);
+}
+
+.container-list ul{
+    list-style-position: inside;
+}
+
+.container-list li{
+    color: white;
+    font-size: 17px;
+    margin: 20px 0;
+}
+
+.container-list li:last-child{
+    margin-bottom: 20px;
+}
+/*fim lista do banner*/
+
+/*inicio fomrulario*/
+.center > .form{
+    width: 95%;
+    max-width: 380px;
+    padding: 10px;
+    height: calc(100% + 40px);
+    position: relative;
+    bottom: 20px;
+    float: right;
+    background-color: white;
+    border: 10px solid rgb(204, 204, 204);
+}
+ 
+.form h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin: 10px 0;
+    color: rgb(140, 140, 140);
+}
+
+.box > span, .form p{
+    width: 100%;
+    display: inline-block;
+    color: rgb(140, 140, 140);
+}
+
+.box input[type=text]{
+    width: 100%;
+    height: 57px;   
+    margin-bottom: 20px;
+    border:1px solid rgb(160, 160, 160);
+}
+
+.form p{
+    width: 95%;
+    max-width: 768px;
+    /*margin: 45px 0;*/ 
+}
+
+.box-submit{
+    text-align: center;
+}
+
+.form input[type=submit]{
+    display: inline-block;
+    width: 280px;
+    height: 56px;
+    border-top: 4px solid rgb(84, 88, 139);
+    border-right: 4px solid rgb(84, 88, 139);
+    border-left: 4px solid rgb(84, 88, 139);
+    border-bottom: 4px solid rgb(84, 88, 139);
+    font-size: 30px;
+    background-color: rgb(54, 58, 109);
+    color: white;
+    cursor: pointer;
+}
+
+.form input[type=submit]:hover{
+    background-color: rgb(64, 68, 119);
+}
+/*fim fomrulario*/
+
+/*inicio apresentacao 1*/
+.present1{
+    height: 270px;
+    width: 100%;
+    padding: 10px 15% 30px 15%;
+    text-align: center;
+    background-color: rgb(221, 221, 221);
+}
+
+.present1 h2{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.present1 p{
+    color: rgb(121, 121, 121);
+}
+/*fim apresentacao1*/
+/*inicio seta*/
+.arrow{
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.arrow img{
+    height: 40px;
+    width: 40px;
+}
+/*fim seta*/
+/*inicio icones*/
+
+.section1{
+    padding-inline: 5%;
+}
+
+.section1 > h2{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-weight: normal;
+    color: rgb(71, 38, 99);
+}
+
+.section1, .center{
+    text-align: center;
+}
+
+.center > .icon{
+    display: inline-block;
+    width: 30%;
+    padding: 0 20px ;
+    text-align: center;
+}
+
+.center-text h2{
+    margin: 20px 0;
+}
+
+.center-text p{
+    text-align: justify;
+}
+/*fim icones*/
+
+/*inicio footer*/
+.footer{
+    height: 90px;
+    margin-top: 150px;
+    text-align: center;
+    border-top: 3px solid rgb(136, 136, 136);
+}
+
+.footer p{
+    margin: 10px 0;
+    color: rgb(150, 150, 150);
+}
+/*fim footer*/
+
+/*inicio medias queries*/
+@media screen and (max-width: 1024px){
+    .center img{
+        margin-top: 17px;
+        margin-left: 0;
+        float: none;
+    }
+
+    .banner{
+        height: auto;
+        width: 100%;
+        padding: 40px 3%;
+        text-align: center;
+    }       
+
+    .container-list{
+        display: inline-block;
+        height: auto;
+        width: 95%;
+        float: none;
+        text-align: left;
+        margin: 10px 0;
+    }
+    /*formulario*/
+    .center > .form{
+        display: inline-block;
+        float: none;
+        text-align: left;
+        top: 0;
+    }
+    .present1{
+        height: auto;
+        width: 100%;
+    }
+    .present1 h2{
+        margin-top: 10px;
+    }
+
+    /*icons*/
+    .section1{
+        padding: 0;
+    }
+    .section1 > h2{
+        margin-top: 10px;
+    }
+    .section1 > .center{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .center > .icon{
+        width: 40%;
+        padding: 0 5px;
+        margin: 5px 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header{
+        height: auto;
+        text-align: center;
+    }
+    
+    .center img{
+        margin: 10px 0;
+    }
+
+    .form input[type=submit]{
+        width: 85%;
+        height: 56px;
+    }
+
+    .present1{
+        padding: 5px 5% 30px 5%;
+    }
+
+    /*icons*/
+    .center > .icon{
+        width: 100%;
+        height: auto;
+        padding: 0 15px 10px 15px;
+        margin: 5px 0;
+    }
+}
